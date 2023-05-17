@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="calculadora.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="fundo">
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <table>
+                <tr>
+                    <td colspan="4"><input type="text" name="display" id="resultado"></td>
+                </tr>
+                <tr>
+                    <td><button class="botaoNumero" onclick="adicionar(7)">7</button></td>
+                    <td><button class="botaoNumero" onclick="adicionar(8)">8</button></td>
+                    <td><button class="botaoNumero" onclick="adicionar(9)">9</button></td>
+                    <td><button class="botaoOperacoes" onclick="adicionar('/')">/</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botaoNumero" onclick="adicionar(4)">4</button></td>
+                    <td><button class="botaoNumero" onclick="adicionar(5)">5</button></td>
+                    <td><button class="botaoNumero" onclick="adicionar(6)">6</button></td>
+                    <td><button class="botaoOperacoes" onclick="adicionar('*')">x</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botaoNumero" onclick="adicionar(1)">1</button></td>
+                    <td><button class="botaoNumero" onclick="adicionar(2)">2</button></td>
+                    <td><button class="botaoNumero" onclick="adicionar(3)">3</button></td>
+                    <td><button class="botaoOperacoes" onclick="adicionar('+')">+</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botaoNumero" onclick="adicionar('.')">.</button></td>
+                    <td><button class="botaoNumero" onclick="adicionar(0)">0</button></td>
+                    <td><button class="botaoNumero" onclick="limpar()">c</button></td>
+                    <td><button class="botaoOperacoes" onclick="adicionar('-')">-</button></td>
+                </tr>
+
+                <tr>
+                    <td colspan="4"><button class="botaoIgual" onclick="igual()">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
